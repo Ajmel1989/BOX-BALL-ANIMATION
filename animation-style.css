@@ -1,0 +1,43 @@
+body{
+    margin: 0;
+}
+.loader{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(4, 288, 188);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loader > div{
+    width: 100px;
+    height: 100px;
+    /* background-color: aliceblue; */
+    border: 10px solid white;
+    border-radius: 25%;
+}
+
+.balls2{
+    animation: loading 3s linear 1s infinite;
+    height: 10px;
+    width: 10px;
+    background-color: blue;
+    border-radius: 50%;
+}
+@keyframes loading{
+    0%{
+        transform: translate(0deg);
+    }
+    25%{
+        transform: translate(90px);
+    }
+    50%{
+        transform: translate(90px,90px);
+    }
+    75%{
+        transform:translatey(90px)
+    }
+    100%{
+        transform: translatey(0px);
+    }
+}
